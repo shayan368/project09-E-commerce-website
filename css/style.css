@@ -1,0 +1,164 @@
+
+body {
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+  font-family: "Poppins", sans-serif;
+  color: #fff7ed;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #ff8c00, #b45309);
+  box-shadow: 0 4px 10px rgba(255, 140, 0, 0.3);
+}
+
+.navbar a.navbar-brand {
+  color: #fff;
+}
+
+.navbar .btn-light {
+  background-color: #fff7ed;
+  color: #b45309;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.navbar .btn-light:hover {
+  background-color: #ff8c00;
+  color: #fff;
+}
+
+/*  Product Card */
+.card {
+  border: none;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(255, 140, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(255, 140, 0, 0.4);
+}
+
+.card img {
+  border-radius: 18px 18px 0 0;
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.08);
+}
+
+/*  Buttons */
+.btn-primary {
+  background: linear-gradient(90deg, #ff8c00, #b45309);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #b45309, #ff8c00);
+  transform: translateY(-3px);
+  box-shadow: 0 0 10px rgba(255, 140, 0, 0.5);
+}
+
+.btn-danger {
+  background: #dc2626;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.btn-success {
+  background: linear-gradient(90deg, #b45309, #ff8c00);
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+/* Search Bar */
+#searchInput {
+  background-color: #fff7ed;
+  color: black;
+  border: 1px solid #b45309;
+  border-radius: 10px;
+  padding: 10px 15px;
+  width: 300px;
+  transition: all 0.3s ease;
+}
+
+#searchInput:focus {
+  outline: none;
+  border-color: #ff8c00;
+  box-shadow: 0 0 8px rgba(255, 140, 0, 0.6);
+}
+
+/* Category Dropdown */
+#categoryFilter {
+  background-color: #1a1a1a;
+  color: #fff7ed;
+  border: 1px solid #b45309;
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+#categoryFilter:hover {
+  border-color: #ff8c00;
+}
+
+/*  Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*  Range Slider */
+input[type="range"] {
+  accent-color: #ff8c00;
+}
+
+/*  Checkout Form */
+form {
+  background: #111;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(255, 140, 0, 0.2);
+}
+
+form input,
+form textarea,
+form select {
+  border-radius: 10px;
+  border: 1px solid #b45309;
+  background-color: #1a1a1a;
+  color: #fff7ed;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #ff8c00;
+  box-shadow: 0 0 8px rgba(255, 140, 0, 0.4);
+}
+
+/*  Responsive */
+@media (max-width: 768px) {
+  #searchInput {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
